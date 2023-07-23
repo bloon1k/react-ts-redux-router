@@ -1,0 +1,93 @@
+// media breakpoints
+$mobile-breakpoint: 375px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+@mixin mobile() {
+    @media screen and (min-width: $mobile-breakpoint) {
+        @content
+    }
+};
+
+@mixin tablet() {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content
+    }
+};
+
+@mixin desktop() {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content
+    }
+};
+
+// fonts
+$main-mobile-font-size: 14px;
+$main-desktop-font-size: 18px;
+$main-line-height: 1.5;
+$links-font-size: 14px;
+
+@mixin title_1_bold {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+@mixin title_2_medium {
+    font-size: 74px;
+    font-weight: 600;
+}
+
+@mixin title_3_regular {
+    font-size: 58px;
+    font-weight: 500;
+}
+
+@mixin title_4_regular {
+    font-size: 42px;
+    font-weight: 500;
+}
+
+@mixin header_1_bold {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+@mixin header_2_bold {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+@mixin header_3_bold {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+@mixin header_4_bold {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@mixin body_1_regular {
+    font-size: $main-desktop-font-size;
+    font-weight: 500;
+}
+
+@mixin body_1_medium {
+    font-size: $main-desktop-font-size;
+    font-weight: 600;
+}
+
+@mixin body_2_regular {
+    font-size: $main-mobile-font-size;
+    font-weight: 500;
+}
+
+@mixin body_2_medium {
+    font-size: $main-mobile-font-size;
+    font-weight: 600;
+}
+
+@mixin label_regular {
+    font-size: 12px;
+    font-weight: 500;
+}

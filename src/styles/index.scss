@@ -1,0 +1,33 @@
+@import 'reset';
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+
+body {
+    // TODO
+    font-family: 'Neue Haas Display Pro', sans-serif;
+    //background-color: $secondary-color;
+    //color: $primary-color;
+    //line-height: $main-line-height;
+    //letter-spacing: 0.02em;
+    //@include body_2_regular;
+    //
+    //&.block-scrolling {
+    //    height: 100%;
+    //    overflow: hidden;
+    //}
+    //
+    //@include tablet() {
+    //    @include body_1_regular;
+    //}
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    & > div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
