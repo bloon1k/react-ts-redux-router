@@ -1,3 +1,1 @@
-****
-## React + TypeScript + Webpack + ESlint + Prettier app boilerplate
-****
+### React, TypeScript, Redux Toolkit, React Router app boilerplate
